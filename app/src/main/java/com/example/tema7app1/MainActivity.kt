@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity() {
 
         val toolBar: androidx.appcompat.widget.Toolbar = findViewById<androidx.appcompat.widget.Toolbar>(R.id.appbar)
         setSupportActionBar(toolBar)
+        supportActionBar?.setDisplayShowTitleEnabled(false) // Esto oculta el título de la app en la Toolbar
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
